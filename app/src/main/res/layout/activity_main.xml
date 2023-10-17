@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Unesi novog polaznika"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextIme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Unesite ime" />
+
+    <EditText
+        android:id="@+id/editTextPrezime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Unesite prezime" />
+
+    <EditText
+        android:id="@+id/editTextGodinaUpisa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Unesite godinu upisa" />
+
+    <EditText
+        android:id="@+id/editTextBrojPoena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Unesite broj poena" />
+
+    <Button
+        android:id="@+id/buttonUnesi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unesi novog polaznika" />
+
+    <Button
+        android:id="@+id/buttonPrikazi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prikaži polaznike" />
+
+    <Button
+        android:id="@+id/buttonObrisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Obriši tabelu Polaznik" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ID"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ime"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Prezime"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Godina upisa"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Broj poena"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

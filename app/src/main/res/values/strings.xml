@@ -1,0 +1,23 @@
+<resources>
+
+    <string name="app_name">Akademija</string>
+
+    <string name="menu_unesi">Unesi novog polaznika</string>
+    <string name="menu_prikazi">Prikaži polaznike</string>
+    <string name="menu_obrisi">Obriši tabelu Polaznik</string>
+    <string name="polaznik_uspesan_unos">Polaznik uspešno unet.</string>
+    <string name="polaznik_greska_unos">Greška prilikom unosa polaznika.</string>
+    <string name="tabela_obrisana">Tabela Polaznik je uspešno obrisana.</string>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+</resources>
